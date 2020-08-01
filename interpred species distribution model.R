@@ -8,7 +8,7 @@ library(latticeExtra)
 library(sp)
 library(ggplot2)
 
-# get and prepare data 
+# get and prepare data --- currently Worldclim website is rework, any attempt will result in a request timeout error *It is not your  fault*
 
 occ_data_raw <-
   get_benchmarking_data("varanus salvator", limit = 1000, climate_resolution = 10)
