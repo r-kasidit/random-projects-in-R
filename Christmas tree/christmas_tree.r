@@ -35,7 +35,7 @@ for (i in 1:layer) {
               triangles[which(triangles$group==i), 2][1],
               triangles[which(triangles$group==i), 2][3])
     list_layer_x[[length(list_layer_x) +1]] <- rep(i,j)
-    list_layer_y[[length(list_layer_y) +1]] <- rep(triangles[which(triangles$group==1), 3][1],j) 
+    list_layer_y[[length(list_layer_y) +1]] <- rep(triangles[which(triangles$group==i), 3][1],j) 
     list_value[[length(list_value) +1]] <- x
       }
   
